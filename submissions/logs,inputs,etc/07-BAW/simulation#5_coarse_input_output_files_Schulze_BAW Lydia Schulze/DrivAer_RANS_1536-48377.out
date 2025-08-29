@@ -1,0 +1,13 @@
+
+decomposePar
+
+restore 0 Directory
+
+renumberMesh
+
+potentialFoam
+
+applyBoundaryLayer
+
+simpleFoam
+... done!

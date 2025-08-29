@@ -1,0 +1,76 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _8dbc61e11c-20241220 OPENFOAM=2412 version=v2412
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /sw/apps/openfoam/v2412/aocc-4.2.0_tp/OpenFOAM-v2412/platforms/linux64AmdDPInt32Opt/bin/potentialFoam -initialiseUBCs -parallel
+Date   : Jun 03 2025
+Time   : 21:25:29
+Host   : mnode024
+PID    : 37251
+I/O    : uncollated
+Case   : /mosella/w5/schulzel/hpc/incompressible/simpleFoam/occDrivAerStaticMesh_c_1536
+nProcs : 1536
+Hosts  :
+(
+    (mnode024 192)
+    (mnode025 192)
+    (mnode026 192)
+    (mnode027 192)
+    (mnode028 192)
+    (mnode051 192)
+    (mnode100 192)
+    (mnode101 192)
+)
+Pstream initialized with:
+    floatTransfer      : false
+    maxCommsSize       : 0
+    nProcsSimpleSum    : 0
+    nonBlockingExchange: 0 (tuning: 0)
+    exchange algorithm : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+potentialFlow: Operating solver in PISO mode
+
+Reading velocity field U
+
+Constructing pressure field p
+
+Constructing velocity potential field Phi
+
+No MRF models present
+
+
+Calculating potential flow
+GAMG:  Solving for Phi, Initial residual = 1, Final residual = 1.031608288704728, No Iterations 12
+GAMG:  Solving for Phi, Initial residual = 0.0325661461409297, Final residual = 0.003392055881013704, No Iterations 12
+GAMG:  Solving for Phi, Initial residual = 0.006932017633319632, Final residual = 0.001287831891871471, No Iterations 12
+GAMG:  Solving for Phi, Initial residual = 0.002838766940376702, Final residual = 0.0005711604807784414, No Iterations 12
+GAMG:  Solving for Phi, Initial residual = 0.001292585559195298, Final residual = 0.0002652502829736162, No Iterations 12
+GAMG:  Solving for Phi, Initial residual = 0.0006068667987853586, Final residual = 0.0001257427733962062, No Iterations 12
+GAMG:  Solving for Phi, Initial residual = 0.0002890896216867901, Final residual = 6.026744725235779e-05, No Iterations 12
+GAMG:  Solving for Phi, Initial residual = 0.0001387113146771321, Final residual = 2.905465418552558e-05, No Iterations 12
+GAMG:  Solving for Phi, Initial residual = 6.690869937881374e-05, Final residual = 1.405335046207103e-05, No Iterations 12
+GAMG:  Solving for Phi, Initial residual = 3.238503726068702e-05, Final residual = 6.811247434008835e-06, No Iterations 12
+GAMG:  Solving for Phi, Initial residual = 1.571038741312167e-05, Final residual = 3.305659956165054e-06, No Iterations 12
+Continuity error = 0.000198001358734376
+Interpolated velocity error = 9.772090287045943e-05
+ExecutionTime = 29.36 s  ClockTime = 32 s
+
+End
+
+Finalising parallel run
