@@ -1,4 +1,6 @@
 # 1st OpenFOAM HPC Challenge (OHC-1)
+[![badge](https://zenodo.org/badge/DOI/10.5281/zenodo.17063427.svg)](https://doi.org/10.5281/zenodo.17063427)
+
 This repository contains the data, scripts and notebooks that were used to analyze the results of the 1st OpenFOAM HPC Challenge (OHC-1), held July 1-2, 2025 in Vienna as part of the 20th OpenFOAM Workshop.
 
 ## OHC-1 Overview
@@ -54,6 +56,22 @@ The presentations (folder "presentations") are not covered by any specific licen
 
 If you have any questions regarding the data, or comments that may help us better prepare for the next occasion of OHC, please feel free to post an issue or contact us at hpc-tc-group@googlegroups.com.
 
+## Citation
+
+Please cite this repo as
+``` bibtex
+@dataset{lesnik_2025_17063427,
+  author       = {Lesnik, Sergey and
+                  Olenik, Gregor and
+                  Wasserman, Mark},
+  title        = {1st OpenFOAM HPC Challenge},
+  month        = sep,
+  year         = 2025,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.17063427},
+  url          = {https://doi.org/10.5281/zenodo.17063427},
+}
+```
 
 [^DrivAerCase]: https://develop.openfoam.com/committees/hpc/-/tree/develop/incompressible/simpleFoam/occDrivAerStaticMesh
 [^HPCTC]: https://develop.openfoam.com/committees/hpc#key-performance-indicators
